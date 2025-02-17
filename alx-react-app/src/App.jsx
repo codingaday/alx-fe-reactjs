@@ -7,11 +7,11 @@ import UserProfile from "./components/UserProfile ";
 function App() {
   return (
     <>
-      <UserProfile name="Abebe" age="28" bio="Loves hiking and coding" />
       <WelcomeMessage />
       <Header />
       <MainContent />
       <Footer />
+      <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
     </>
   );
 }
