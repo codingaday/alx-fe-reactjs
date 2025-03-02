@@ -5,7 +5,8 @@ import RecipeDetails from "./components/RecipeDetails";
 import EditRecipeForm from "./components/EditRecipeForm";
 import DeleteRecipeButton from "./components/DeleteRecipeButton";
 import SearchBar from "./components/SearchBar";
-
+import FavoritesList from "./components/FavoritesList";
+import RecommendationsList from "./components/RecommendationsList";
 const App = () => {
   return (
     <Router>
@@ -14,6 +15,16 @@ const App = () => {
         <nav>
           <Link to="/" style={{ marginRight: "10px" }}>
             Home
+          </Link>
+        </nav>
+        <nav>
+          <Link to="/favorites" style={{ marginRight: "10px" }}>
+            favorites
+          </Link>
+        </nav>
+        <nav>
+          <Link to="/recommendations" style={{ marginRight: "10px" }}>
+            RecommendationsList
           </Link>
         </nav>
         <Routes>
