@@ -10,7 +10,7 @@ const TodoList = () => {
   const addTodo = (text) => {
     const newTodo = {
       id: todos.length + 1,
-      text: text,
+      text,
       completed: false,
     };
     setTodos([...todos, newTodo]);
@@ -35,13 +35,12 @@ const TodoList = () => {
         {todos.map((todo) => (
           <li
             key={todo.id}
-            style={{
-              textDecoration: todo.completed ? "line-through" : "none",
-            }}
+            style={{ textDecoration: todo.completed ? "line-through" : "none" }}
             onClick={() => toggleTodo(todo.id)}
           >
             {todo.text}
             <button
+              data-testid={`delete-button-${todo.id}`} // Added test ID
               onClick={(e) => {
                 e.stopPropagation();
                 deleteTodo(todo.id);
