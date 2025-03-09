@@ -1,5 +1,8 @@
+// src/components/Profile.jsx
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+import ProfileDetails from "./ProfileDetails";
+import ProfileSettings from "./ProfileSettings";
 
 function Profile() {
   return (
@@ -8,14 +11,19 @@ function Profile() {
       <nav>
         <ul>
           <li>
-            <a href="/profile/details">Profile Details</a>
+            <Link to="details">Profile Details</Link>
           </li>
           <li>
-            <a href="/profile/settings">Profile Settings</a>
+            <Link to="settings">Profile Settings</Link>
           </li>
         </ul>
       </nav>
-      <Outlet />
+
+      {/* Nested Routes */}
+      <Routes>
+        <Route path="details" element={<ProfileDetails />} />
+        <Route path="settings" element={<ProfileSettings />} />
+      </Routes>
     </div>
   );
 }
