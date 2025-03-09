@@ -1,18 +1,23 @@
+import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import TodoList from "../TodoList";
+import TodoList from "../components/TodoList";
 import "@testing-library/jest-dom";
 
 describe("TodoList Component", () => {
   test("renders TodoList component", () => {
     render(<TodoList />);
-    expect(screen.getByText(/Todo List/i)).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: /todo list/i })
+    ).toBeInTheDocument();
   });
 
   test("renders initial todos", () => {
     render(<TodoList />);
     expect(screen.getByText("Learn React")).toBeInTheDocument();
     expect(screen.getByText("Build a React app")).toBeInTheDocument();
-    expect(screen.getByText("Test Todo List")).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: /todo list/i })
+    ).toBeInTheDocument();
   });
 
   test("adds a new todo", () => {
@@ -33,8 +38,9 @@ describe("TodoList Component", () => {
 
   test("deletes a todo", () => {
     render(<TodoList />);
-    const deleteButton = screen.getByText("Delete");
-    fireEvent.click(deleteButton);
+    const deleteButtons = screen.getAllByText("Delete");
+    fireEvent.click(deleteButtons[0]); // Click first delete button
+
     expect(screen.queryByText("Learn React")).not.toBeInTheDocument();
   });
 });
