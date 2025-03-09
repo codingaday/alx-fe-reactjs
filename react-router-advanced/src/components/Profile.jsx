@@ -1,4 +1,3 @@
-// src/components/Profile.jsx
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import ProfileDetails from "./ProfileDetails";

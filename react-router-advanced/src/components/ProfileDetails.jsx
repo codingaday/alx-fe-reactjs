@@ -1,4 +1,3 @@
-// src/components/ProfileDetails.jsx
 import React from "react";
 
 function ProfileDetails() {

@@ -8,6 +8,7 @@ import ProfileSettings from "./components/ProfileSettings";
 import BlogPost from "./components/BlogPost";
 import Login from "./components/Login";
 import NotFound from "./components/NotFound";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 function App() {
   return (
@@ -15,10 +16,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+
         <Route path="/profile" element={<Profile />}>
           <Route path="details" element={<ProfileDetails />} />
           <Route path="settings" element={<ProfileSettings />} />
         </Route>
+
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
