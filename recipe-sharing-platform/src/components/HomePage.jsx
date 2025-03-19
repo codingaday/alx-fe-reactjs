@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import recipeData from "../data.json";
 
@@ -39,24 +39,26 @@ const HomePage = () => {
         </div>
       </header>
       <main className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="md:grid md:grid-cols-2 md:gap-8">
           {recipes.map((recipe) => (
             <Link
               to={`/recipe/${recipe.id}`}
               key={recipe.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+              className="md:bg-white md:rounded-xl md:shadow-lg md:overflow-hidden md:hover:shadow-xl md:transform md:hover:-translate-y-1 md:transition-all md:duration-300 block mb-4"
             >
               <img
                 src={recipe.image}
                 alt={recipe.title}
-                className="w-full h-56 object-cover"
+                className="md:w-full md:h-56 md:object-cover w-full h-48 object-cover"
               />
-              <div className="p-6">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-2 line-clamp-1">
+              <div className="md:p-6 p-4">
+                <h2 className="md:text-2xl md:font-semibold md:text-gray-800 md:mb-2 md:line-clamp-1 text-xl font-semibold text-gray-800 mb-2">
                   {recipe.title}
                 </h2>
-                <p className="text-gray-600 line-clamp-2">{recipe.summary}</p>
-                <span className="inline-block mt-4 text-blue-600 font-medium hover:underline">
+                <p className="md:text-gray-600 md:line-clamp-2 text-gray-600">
+                  {recipe.summary}
+                </p>
+                <span className="md:inline-block md:mt-4 md:text-blue-600 md:font-medium md:hover:underline inline-block mt-2 text-blue-600">
                   View Recipe →
                 </span>
               </div>
