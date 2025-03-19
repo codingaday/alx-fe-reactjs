@@ -79,7 +79,7 @@ const HomePage = () => {
             className="w-full md:p-3 p-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none border-gray-300"
           />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-8">
           {filteredRecipes.length > 0 ? (
             filteredRecipes.map((recipe) => (
               <Link
