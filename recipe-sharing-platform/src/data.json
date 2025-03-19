@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "title": "Beef Stroganoff",
+    "summary": "Tender strips of beef in a rich, creamy mushroom sauce, served over noodles or rice.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 4,
+    "title": "Vegetable Stir Fry",
+    "summary": "A healthy and colorful mix of vegetables stir-fried in a savory sauce.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 5,
+    "title": "Margarita Pizza",
+    "summary": "A simple yet delicious pizza topped with fresh tomatoes, basil, and mozzarella.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 6,
+    "title": "Caesar Salad",
+    "summary": "A crisp romaine salad with a creamy dressing, croutons, and parmesan cheese.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 7,
+    "title": "Sushi Rolls",
+    "summary": "Japanese sushi rolls made with fresh fish, rice, and seaweed.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 8,
+    "title": "Lentil Soup",
+    "summary": "A hearty soup made with lentils, vegetables, and spices.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 9,
+    "title": "Pancakes",
+    "summary": "Fluffy pancakes served with syrup and butter.",
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 10,
+    "title": "Grilled Salmon",
+    "summary": "Perfectly grilled salmon with a lemon butter sauce.",
+    "image": "https://via.placeholder.com/150"
+  }
+]
