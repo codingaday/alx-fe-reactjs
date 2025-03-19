@@ -2,61 +2,141 @@
   {
     "id": 1,
     "title": "Spaghetti Carbonara",
-    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://via.placeholder.com/150"
+    "summary": "A timeless Italian classic featuring al dente spaghetti tossed with a creamy egg and Pecorino Romano sauce, finished with crispy pancetta.",
+    "image": "https://images.unsplash.com/photo-1600803907087-f93762d70da5?w=150",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g Pecorino Romano",
+      "Freshly ground black pepper"
+    ],
+    "instructions": "Boil spaghetti until al dente. Fry pancetta until crispy. Whisk eggs with cheese, combine with hot pasta and pancetta, season with pepper, and serve immediately."
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
-    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://via.placeholder.com/150"
+    "summary": "Tender marinated chicken grilled to perfection, simmered in a rich, spiced tomato cream sauce.",
+    "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=150",
+    "ingredients": [
+      "500g chicken breast",
+      "200g Greek yogurt",
+      "2 tbsp tikka masala paste",
+      "400g canned tomatoes",
+      "100ml heavy cream"
+    ],
+    "instructions": "Marinate chicken in yogurt and spices for 2 hours. Grill until charred. Simmer tomatoes, cream, and spices into a sauce, add chicken, and cook for 15 minutes."
   },
   {
     "id": 3,
-    "title": "Beef Stroganoff",
-    "summary": "Tender strips of beef in a rich, creamy mushroom sauce, served over noodles or rice.",
-    "image": "https://via.placeholder.com/150"
+    "title": "Beef Bourguignon",
+    "summary": "A French stew of slow-cooked beef in red wine with mushrooms, onions, and aromatic herbs.",
+    "image": "https://images.unsplash.com/photo-1604902615409-9a2ee5a1a7b5?w=150",
+    "ingredients": [
+      "1kg beef chuck",
+      "750ml red wine",
+      "200g mushrooms",
+      "150g pearl onions",
+      "2 tbsp thyme"
+    ],
+    "instructions": "Brown beef, deglaze with wine, add vegetables and herbs, then simmer for 3 hours until tender."
   },
   {
     "id": 4,
-    "title": "Vegetable Stir Fry",
-    "summary": "A healthy and colorful mix of vegetables stir-fried in a savory sauce.",
-    "image": "https://via.placeholder.com/150"
+    "title": "Vegetarian Quinoa Bowl",
+    "summary": "A healthy mix of quinoa, roasted vegetables, and a zesty lemon-tahini dressing.",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=150",
+    "ingredients": [
+      "1 cup quinoa",
+      "1 zucchini",
+      "1 bell pepper",
+      "2 tbsp tahini",
+      "1 lemon"
+    ],
+    "instructions": "Cook quinoa. Roast vegetables at 400°F for 20 minutes. Mix tahini with lemon juice and drizzle over the bowl."
   },
   {
     "id": 5,
-    "title": "Margarita Pizza",
-    "summary": "A simple yet delicious pizza topped with fresh tomatoes, basil, and mozzarella.",
-    "image": "https://via.placeholder.com/150"
+    "title": "Chocolate Lava Cake",
+    "summary": "Decadent individual cakes with a molten chocolate center, perfect for dessert lovers.",
+    "image": "https://images.unsplash.com/photo-1617202220217-7a8e42b4e6ca?w=150",
+    "ingredients": [
+      "100g dark chocolate",
+      "100g butter",
+      "2 eggs",
+      "50g sugar",
+      "30g flour"
+    ],
+    "instructions": "Melt chocolate and butter, mix with eggs, sugar, and flour. Bake at 375°F for 10 minutes."
   },
   {
     "id": 6,
-    "title": "Caesar Salad",
-    "summary": "A crisp romaine salad with a creamy dressing, croutons, and parmesan cheese.",
-    "image": "https://via.placeholder.com/150"
+    "title": "Pad Thai",
+    "summary": "A Thai stir-fry with rice noodles, shrimp, peanuts, and a tangy tamarind sauce.",
+    "image": "https://images.unsplash.com/photo-1582293074986-f395df8488ea?w=150",
+    "ingredients": [
+      "200g rice noodles",
+      "150g shrimp",
+      "50g peanuts",
+      "2 tbsp tamarind paste",
+      "1 lime"
+    ],
+    "instructions": "Soak noodles, stir-fry shrimp, add sauce ingredients, toss with noodles, and top with peanuts."
   },
   {
     "id": 7,
-    "title": "Sushi Rolls",
-    "summary": "Japanese sushi rolls made with fresh fish, rice, and seaweed.",
-    "image": "https://via.placeholder.com/150"
+    "title": "Roasted Salmon with Dill",
+    "summary": "Juicy salmon fillets roasted with fresh dill and a lemon-garlic glaze.",
+    "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b1a3?w=150",
+    "ingredients": [
+      "2 salmon fillets",
+      "1 tbsp dill",
+      "1 lemon",
+      "2 garlic cloves",
+      "2 tbsp olive oil"
+    ],
+    "instructions": "Marinate salmon with oil, lemon, garlic, and dill. Roast at 400°F for 12-15 minutes."
   },
   {
     "id": 8,
-    "title": "Lentil Soup",
-    "summary": "A hearty soup made with lentils, vegetables, and spices.",
-    "image": "https://via.placeholder.com/150"
+    "title": "Mushroom Risotto",
+    "summary": "Creamy Arborio rice cooked with sautéed mushrooms and Parmesan cheese.",
+    "image": "https://images.unsplash.com/photo-1580959373256-73ed382e8856?w=150",
+    "ingredients": [
+      "1 cup Arborio rice",
+      "200g mushrooms",
+      "50g Parmesan",
+      "500ml vegetable stock",
+      "1 onion"
+    ],
+    "instructions": "Sauté onions and mushrooms, add rice, gradually stir in stock, finish with Parmesan."
   },
   {
     "id": 9,
-    "title": "Pancakes",
-    "summary": "Fluffy pancakes served with syrup and butter.",
-    "image": "https://via.placeholder.com/150"
+    "title": "Lamb Tagine",
+    "summary": "A Moroccan stew with tender lamb, dried apricots, and warm spices.",
+    "image": "https://images.unsplash.com/photo-1630175860333-513ea68d6e99?w=150",
+    "ingredients": [
+      "1kg lamb shoulder",
+      "100g dried apricots",
+      "2 tsp cinnamon",
+      "1 tsp cumin",
+      "400ml chicken stock"
+    ],
+    "instructions": "Brown lamb, add spices and stock, simmer with apricots for 2 hours."
   },
   {
     "id": 10,
-    "title": "Grilled Salmon",
-    "summary": "Perfectly grilled salmon with a lemon butter sauce.",
-    "image": "https://via.placeholder.com/150"
+    "title": "Tiramisu",
+    "summary": "An Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
+    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=150",
+    "ingredients": [
+      "200g ladyfingers",
+      "250g mascarpone",
+      "100ml espresso",
+      "50g sugar",
+      "2 tbsp cocoa powder"
+    ],
+    "instructions": "Dip ladyfingers in espresso, layer with whipped mascarpone and sugar, chill, and dust with cocoa."
   }
 ]
