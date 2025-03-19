@@ -13,7 +13,7 @@ const AddRecipeForm = () => {
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target; // Explicitly using e.target.value
     setFormData((prev) => ({ ...prev, [name]: value }));
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: "" }));
@@ -21,7 +21,7 @@ const AddRecipeForm = () => {
   };
 
   const handleImageChange = (e) => {
-    const file = e.target.files[0];
+    const file = e.target.files[0]; // Using e.target.files instead of value for file input
     if (file) {
       if (!file.type.startsWith("image/")) {
         setErrors((prev) => ({
@@ -87,7 +87,6 @@ const AddRecipeForm = () => {
         instructions: formData.steps,
       };
 
-      // Add to allRecipes in localStorage
       const allRecipes = JSON.parse(localStorage.getItem("allRecipes")) || [];
       const updatedRecipes = [...allRecipes, newRecipe];
       localStorage.setItem("allRecipes", JSON.stringify(updatedRecipes));
