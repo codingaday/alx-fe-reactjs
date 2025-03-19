@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import recipeData from "../data.json";
 
 const RecipeDetail = () => {
   const { id } = useParams();
@@ -10,7 +9,8 @@ const RecipeDetail = () => {
 
   useEffect(() => {
     try {
-      const selectedRecipe = recipeData.find((r) => r.id === parseInt(id));
+      const allRecipes = JSON.parse(localStorage.getItem("allRecipes")) || [];
+      const selectedRecipe = allRecipes.find((r) => r.id === parseInt(id));
       if (!selectedRecipe) {
         throw new Error("Recipe not found");
       }
@@ -81,7 +81,6 @@ const RecipeDetail = () => {
                 {recipe.title}
               </h1>
               <p className="text-gray-600 text-lg mb-8">{recipe.summary}</p>
-
               <section className="mb-8">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   Ingredients
@@ -92,7 +91,6 @@ const RecipeDetail = () => {
                   ))}
                 </ul>
               </section>
-
               <section>
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">
                   Instructions
