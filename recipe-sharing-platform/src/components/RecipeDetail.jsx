@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
+import recipeData from "../data.json"; // Explicitly include data.json
 
 const RecipeDetail = () => {
   const { id } = useParams();
@@ -9,8 +10,14 @@ const RecipeDetail = () => {
 
   useEffect(() => {
     try {
+      // Load recipes from localStorage (allRecipes)
       const allRecipes = JSON.parse(localStorage.getItem("allRecipes")) || [];
-      const selectedRecipe = allRecipes.find((r) => r.id === parseInt(id));
+      // Combine with data.json as a fallback
+      const combinedRecipes = [
+        ...allRecipes,
+        ...recipeData.filter((r) => !allRecipes.some((ar) => ar.id === r.id)), // Exclude duplicates
+      ];
+      const selectedRecipe = combinedRecipes.find((r) => r.id === parseInt(id));
       if (!selectedRecipe) {
         throw new Error("Recipe not found");
       }
